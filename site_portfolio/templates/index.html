@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>Portfólio</title>
+
+</head>
+<body>
+    <h1>Meu Portfólio</h1>
+    
+    <h2>Meu nome pe {{ eu.nome}}</h2>
+    <p>Minha altura é {{ eu.altura}}</p>
+    
+    <ul>
+        {% conhecimentos in eu.conhecimento %}
+            <li>{{ conhecimento }}</li>
+        {% endfor %}
+    </ul>
+
+    <h3>Endereço</h3>
+    <p>Cidade: {{ eu.conhecimento.cidade}}</p>
+    <p>País: {{</p>
+    
+</body>
+</html>
